@@ -1,0 +1,27 @@
+SECTION 1:
+1. Create DTO and controllers
+2. Implement GET Method
+3. Implement POSt method
+4. Handling Response
+5. Spefic Exception Handling
+6. Overall Project Exception Handling
+7. IMplement DELETE Method
+
+
+Section 2:
+1.Exception Handling
+2.Validation
+3.Implement Hateoas
+4.Content Negotiation -
+
+Section3:
+========
+swagger Documentation
+http;//localhost:8081/v2/aps-docs
+
+Actuator - The monitoring tool
+
+1.starter actuator
+2.Hal Browser - to visualize data
+http://localhost:8081/actuator
+http://localhost:8081/browser/index.html

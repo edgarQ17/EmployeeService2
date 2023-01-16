@@ -20,11 +20,11 @@ public class EmployeeDao {
     }
 
     public Employee getEmployeeById(int empId) {
-        return  list.stream().filter(emp -> emp.getEmployeeId() ==empId).findAny().orElse(null);
+        return  list.stream().filter(emp -> emp.getId() ==empId).findAny().orElse(null);
     }
 
     public Employee saveEmployee(Employee emp) {
-        emp.setEmployeeId(list.size()+1);
+        emp.setId(list.size()+1);
         list.add(emp);
         return emp;
     }
@@ -34,7 +34,7 @@ public class EmployeeDao {
 
         while (iterator.hasNext()){
             Employee emp = iterator.next();
-            if(empId == emp.getEmployeeId()){
+            if(empId == emp.getId()){
                 iterator.remove();
                 return emp;
             }

@@ -44,7 +44,7 @@ public class EmployeeController {
         Employee newEmployee = service.saveEmployee(emp);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("{employeeId}")
-                .buildAndExpand(newEmployee.getEmployeeId())
+                .buildAndExpand(newEmployee.getId())
                 .toUri();
         ///this helps create a URI which similar to saying created by using the Header
 
